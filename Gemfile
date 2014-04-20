@@ -20,6 +20,7 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
   gem 'html2haml'
   gem 'rails_layout'
+  gem 'quiet_assets'
 end
 group :development, :test do
   gem 'factory_girl_rails'
@@ -33,3 +34,5 @@ group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
+
+gem 'hirb'
