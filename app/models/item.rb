@@ -1,4 +1,7 @@
 class Item < ActiveRecord::Base
+
+  has_many :line_items
+
   validates :title, presence: true,
                     uniqueness: true
   validates :price, presence: true,

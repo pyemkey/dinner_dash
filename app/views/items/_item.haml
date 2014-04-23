@@ -1,0 +1,8 @@
+%div
+  %h3= item.title
+  %ul
+    -item.description.split(",").each do |ingredient|
+      %li= ingredient
+  %p
+    %span= "#{ number_to_currency(item.price) }"
+  = button_to "Add to cart", line_items_path(item_id: item.id)
