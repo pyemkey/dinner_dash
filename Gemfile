@@ -28,6 +28,7 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'hirb'
 end
 group :test do
   gem 'capybara'
@@ -35,4 +36,3 @@ group :test do
   gem 'email_spec'
 end
 
-gem 'hirb'
