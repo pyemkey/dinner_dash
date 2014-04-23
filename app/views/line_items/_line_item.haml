@@ -1,0 +1,4 @@
+%li
+  ="#{line_item.item.title} x #{line_item.quantity} = #{number_to_currency(line_item.total_price)}"
+  = button_to("-", line_item, method: :delete)
+  = button_to("+", line_items_path(item_id: line_item.item))
