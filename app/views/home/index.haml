@@ -1,0 +1,4 @@
+= content_for(:cart) do
+  - if cart
+    =link_to "Show cart", cart
+=render @items
